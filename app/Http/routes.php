@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/article/add', 'CRUDController@AddArticle');
+Route::post('/article/add', 'CRUDController@AddArticle');
+
+Route::get('/article/view_all', 'CRUDController@ViewArticles');
